@@ -1,6 +1,10 @@
 <script>
 // Logica
-    let someText = `Fronet Developer at Consorcio`;
+    let someText = `Frontend Developer at Home`;
+    let count = 0;
+    function handleClick() {
+        count += 1
+    }
 
 </script>
 
@@ -13,4 +17,5 @@
 
 <div class="about">
 <p>{someText}</p>
+<button on:click={handleClick} >Sumar {count === 0 ? '' : count}</button>
 </div>

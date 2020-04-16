@@ -1,9 +1,17 @@
 <script>
 	import About from './components/About.svelte'
+	import Text from './components/Text.svelte'
+	import Person from './components/Person.svelte'
 
 	export let name;
 	export let lastname;
 	let sveletLogo='https://static.platzi.com/media/avatars/visaka-devi_ea7e8b70-a52b-466b-9fe9-d5d0cb405479'
+
+	const data = {
+		name: 'visaka',
+		lastname: 'Devi',
+		age: 27
+	}
 
 </script>
 
@@ -44,5 +52,8 @@
 	<h1> {name} {lastname}!</h1>
 	<p class="title">Front</p>
 	<About/>
+	<Text anotherText="Holi a todes"/>
+	<Person data={data}/>
+	<Person {...data} />
 	<img src={sveletLogo} alt="">
 </main>
