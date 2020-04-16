@@ -3,6 +3,7 @@
 	import Text from './components/Text.svelte'
 	import Person from './components/Person.svelte'
 	import Skills from './components/Skills.svelte'
+	import Input from './components/Input.svelte'
 
 	export let name;
 	export let lastname;
@@ -57,9 +58,11 @@
 	<h1> {name} {lastname}!</h1>
 	<p class="title">Front</p>
 	<About/>
+	<Input />
 	<Text anotherText="Holi a todes"/>
 	<Person data={data}/>
 	<Person {...data} />
 	<Skills />
 	<img src={sveletLogo} alt="">
+
 </main>

@@ -1,4 +1,6 @@
 <script>
+// Component
+import Button from './Button.svelte';
 // Logica
     let someText = `Frontend Developer at Home`;
     let count = 0;
@@ -32,4 +34,8 @@
  {/if}
 <button on:click={handleClick} >Sumar {count === 0 ? '' : count}</button>
 <button on:click={toggle}>Dark-mode</button>
+
+ <Button text="Click"  {count}  on:click={handleClick}/>
+
+ <Button text="DarkMode" on:click={toggle}/>
 </div>
