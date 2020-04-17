@@ -5,6 +5,7 @@
 	import Skills from './components/Skills.svelte'
 	import Input from './components/Input.svelte'
 	import Photos from './components/Photos.svelte'
+	import ButtonCount from './components/ButtonCount.svelte'
 
 	export let name;
 	export let lastname;
@@ -52,13 +53,16 @@
 			max-width: none;
 		}
 	}
+
 </style>
+
 
 
 <main>
 	<h1> {name} {lastname}!</h1>
 	<p class="title">Front</p>
 	<About/>
+	<ButtonCount />
 	<Input />
 	<Text anotherText="Holi a todes"/>
 	<Person data={data}/>
